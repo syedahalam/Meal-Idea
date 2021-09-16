@@ -20,17 +20,17 @@ paste your sample data here
 }
 
 ## Visual of your component hierarchy
-![Screen Shot 2021-09-16 at 12 46 35 AM](https://media.git.generalassemb.ly/user/38079/files/b1248780-1687-11ec-913d-63c9ed412216)
+https://media.git.generalassemb.ly/user/38079/files/b1248780-1687-11ec-913d-63c9ed412216
 
 
 
 ## Wire Frames
 > Copy and paste or drag and drop your images here.
 
-![Screen Shot 2021-09-16 at 12 20 11 AM](https://media.git.generalassemb.ly/user/38079/files/bf72a380-1687-11ec-8422-2f3587b1587b)
-![Screen Shot 2021-09-16 at 12 19 55 AM](https://media.git.generalassemb.ly/user/38079/files/c6011b00-1687-11ec-9798-069f8a567852)
-![Screen Shot 2021-09-16 at 12 19 45 AM](https://media.git.generalassemb.ly/user/38079/files/ca2d3880-1687-11ec-84f3-ea29c1056593)
-![Screen Shot 2021-09-16 at 12 46 43 AM](https://media.git.generalassemb.ly/user/38079/files/cd282900-1687-11ec-998f-9b4101d0b9d1)
+https://media.git.generalassemb.ly/user/38079/files/bf72a380-1687-11ec-8422-2f3587b1587b
+https://media.git.generalassemb.ly/user/38079/files/c6011b00-1687-11ec-9798-069f8a567852
+https://media.git.generalassemb.ly/user/38079/files/ca2d3880-1687-11ec-84f3-ea29c1056593
+https://media.git.generalassemb.ly/user/38079/files/cd282900-1687-11ec-998f-9b4101d0b9d1
 
 ## User Stories
 > Add user stories following the _As a [type of user], I want [what the user wants], so that [what it helps accomplish]_ format.
