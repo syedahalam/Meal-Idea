@@ -2,37 +2,29 @@
 
 * {
 	margin: 0;
-	padding: 0;
+	/* padding: 0; */
 	font-family: 'Roboto', sans-serif;
-	/* background-image: url('./images/eiliv-sonas-aceron-zZUCwzCxkFM-unsplash.jpg');
-	background-repeat: no-repeat center fixed;
-	background-size: cover; */
 }
-.App {
-	
-}
+
 nav {
 	display: flex;
 	justify-content: space-between;
-	margin: 0;
-	background-color: rgba(0, 0, 0, 0.352);
+	margin-right: 4em;
+	background-color: #136d19;
 	color: white;
 	padding: 1em;
+	padding-top: 2em;
+	padding-right: 2em;
+	width: 100%;
 }
-.heading {
-}
-nav a{
+
+nav a {
 	color: white;
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.5em;
+	font-size: 1.6em;
 	text-decoration: none;
-	
 }
-nav a:hover{
-	background-color: white;
-	color:gray;
-	/* padding: .2em; */
-}
-nav h1{
-	font-size: 1.5em;
+
+nav h1 {
+	font-size: 1.4em;
 }

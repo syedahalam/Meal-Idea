@@ -1,111 +1,37 @@
-button{
-    height: 8em;
-    width: 12em;
-    margin: 2em;
-}
-.chicken{
-    background-image: url('./images/chicken.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.beef{
- background-image: url('./images/beef.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.goat{
- background-image: url('./images/goat.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.breakfast{
- background-image: url('./images/breakfast.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.sides{
- background-image: url('./images/sides.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.desserts{
- background-image: url('./images/chicken.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.pork{
- background-image: url('./images/ham.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.vegetarian{
- background-image: url('./images/veg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.sea-food{
- background-image: url('./images/seafood.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.lamb{
- background-image: url('./images/lamb.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.starters{
- background-image: url('./images/starters.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.veg{
- background-image: url('./images/chicken.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.pasta{
- background-image: url('./images/pasta.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+
 .card {
-  border: 1px solid lightgray;
-  border-radius: 1rem;
-  display: grid;
-  grid-template-rows: 2fr 1fr;
+	border: 1px solid lightgray;
+	border-radius: 1rem;
+	display: grid;
+	grid-template-rows: 2fr 1fr;
 }
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: minmax(250px, auto);
-  grid-gap: 1rem;
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-auto-rows: minmax(280px, auto);
+	grid-gap: 1rem;
+	margin: 0 auto;
+	max-width: 1300px;
+	padding: 2rem;
+	
 }
 .card-image {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	 
 }
 .card-title {
-  background-color: #276074;
-  color: white;
-  border-radius: 0 0 1rem 1rem;
-  margin: 0;
-  padding: 1rem;
-  text-align: center;
+	background-color: #136d19;
+	color: white;
+	border-radius: 0 0 1rem 1rem;
+	margin: 0;
+	padding: 2rem;
+	text-align: center;
+	font-size: 1.2em;
+  align-items: center;
+  
+}
+a{
+  text-decoration: none;
 }
