@@ -6,19 +6,25 @@ import CategoryResults from '../CategoryResults/CategoryResults';
 const Home = ({handleSubmit, handleChange, searchStr}) => {
     console.log(searchStr)
     return (
-			<div className='home'>
+			<div className='home-home'>
 				{searchStr ? 
-                 <div className='contain'>
+                 <div className='contain-home'>
 					{searchStr.map(results => {
 						return (
-							<ul>
-								<li>
-									<h2>{results.strMeal}</h2>
-								</li>
-								<li>
-									<img  className='img' src={results.strMealThumb} alt={results.strMeal} />
-								</li>
-							</ul>
+							<div>
+								<ul>
+									<li>
+										<h2>{results.strMeal}</h2>
+									</li>
+									<li>
+										<img
+											className='img-home'
+											src={results.strMealThumb}
+											alt={results.strMeal}
+										/>
+									</li>
+								</ul>
+							</div>
 						);
 						
 					})}

@@ -5,3 +5,20 @@
     text-align: center;
     flex-direction: column;
 }
+.img-list{
+    width: 20em;
+    height: 20em;
+    grid-row: 1 /span 4;
+    grid-column: 1 / span 4;
+    border-radius: 12px;
+    
+   
+}
+.contain-list{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+     /* align-items: center; */
+    background-color:white;
+}
+	

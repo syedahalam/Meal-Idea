@@ -1,4 +1,4 @@
-.home{
+.home-home{
     background-image: url('../Home/Images/home.png');
 	background-repeat: no-repeat;
 	background-size: cover; 
@@ -38,19 +38,21 @@
       margin-top: 3%;
       font-size: 1.3em;
 }
-.img{
-    width: 10em;
-    height: 10em;
+.img-home{
+    width: 20em;
+    height: 20em;
     grid-row: 1 /span 4;
-    grid-column: 1 /span 4;
+    grid-column: 1 / span 4;
     border-radius: 12px;
+    
+   
 }
-.contain{
+.contain-home{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* align-items: center; */
-    background-color: seashell;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+     /* align-items: center; */
+    background-color:white;
 }
 ul{
     list-style-type: none;

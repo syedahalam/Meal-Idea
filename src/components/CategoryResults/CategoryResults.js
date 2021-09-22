@@ -6,18 +6,25 @@ const CategoryResults = ({searchStr}) => {
    
     return (
 			<div>
-				{/* {searchStr.map((results) => {
-					return (
-						<ul>
-							<li>
-								<h2>{results.strMeal}</h2>
-							</li>
-							<li>
-								<img src={results.strMealThumb} alt={results.strMeal} />
-							</li>
-						</ul>
-					);
-				})} */}
+			
+                 {/* <div className='contain'>
+					{searchStr.map(results => {
+						return (
+							<ul>
+								<li>
+									<h2>{results.strMeal}</h2>
+								</li>
+								<li>
+									<img  className='img' src={results.strMealThumb} alt={results.strMeal} />
+								</li>
+							</ul>
+						);
+						
+					})}
+                        
+				</div> */}
+				 
+
 			</div>
 		);
 };

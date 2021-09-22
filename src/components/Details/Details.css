@@ -1,0 +1,36 @@
+.containee {
+	margin: 20em;
+	display: grid; 
+	 grid-template-rows: 1fr 1fr 1fr 1fr; 
+	 grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	
+}
+h1{
+	text-align: center;
+	line-height: 1.2em;
+}
+h3{
+	text-align: center;
+	padding: 1.5em;
+}
+ .img-pic {
+	width: 20em;
+	height: 20em; 
+	border-radius: 12px;
+	margin-left: 42%; 
+	align-content: center;
+	
+ } 
+.main {
+	margin: 20em;
+	text-align: center;
+} 
+ .para{
+    text-align: center;
+	line-height: 1em;
+	/* grid-row: 4;
+	grid-column: 1/span 4; */
+	padding: 2em;
+	line-height: 1.2em;
+ } 

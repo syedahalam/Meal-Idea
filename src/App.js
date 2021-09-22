@@ -5,7 +5,8 @@ import { Link, Route } from 'react-router-dom';
 import ListOfCategory from './components/ListOfCategory/ListOfCategory';
 import Home from './components/Home/Home';
 import { useEffect, useState } from 'react';
-import CategoryResults from './components/CategoryResults/CategoryResults';
+// import CategoryResults from './components/CategoryResults/CategoryResults';
+import Details from './components/Details/Details';
 
 function App() {
 	const [searchStr, setSearchStr] = useState('');
@@ -38,7 +39,9 @@ function App() {
 			<header>
 				<nav>
 					<Link to='/'>
-						<h1 className='heading'>MEAL IDEA</h1>
+						<h1 className='heading' onClick={()=>{
+              setCategoryResults('')
+            }}>MEAL IDEA</h1>
 					</Link>
 					<Link to='/Categories'>Categories</Link>
 					{/* <Link to='/About'>About</Link> */}
@@ -61,7 +64,8 @@ function App() {
 			<Route path='/about' component={About} />
 			<Route path='/categories' component={Categories} />
 			<Route path='/list/:strCategory' component={ListOfCategory} />
-			<CategoryResults categoryResults={categoryResults} />
+      <Route path='/details/:idMeal' component={Details} />
+	
 		</div>
 	);
 }
