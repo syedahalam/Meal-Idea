@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './ListOfCategories.css';
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const ListOfCategory = () => {
 
@@ -21,24 +21,26 @@ const ListOfCategory = () => {
 					})
 					.catch(console.error);
         
-    }, [])
+    }, [strCategory])
 
 if(!list.length) return null;
 
     return (
+		<div className='main-wrapper'>
 			<div className='contain-list'>
 				{list.map((meals) => {
 					return (
 						<div className='box'>
 							<Link to={`/details/${meals.idMeal}`} key={meals.idMeal}>
 								<div className='both'>
-									<h2>{meals.strMeal}</h2>
+									<h2 className='heading'>{meals.strMeal}</h2>
 									<img className='img-list' src={meals.strMealThumb} alt={meals.strMeal} />
 								</div>
 							</Link>
 						</div>
 					);
 				})}
+			</div>
 			</div>
 		);
 };
