@@ -3,5 +3,44 @@
     padding:30 px;
     margin: 10px;
     text-align: center;
-    flex-direction: column;
+    flex-direction:row;
+    
 }
+.img-list{
+    width: 20em;
+    height: 20em;
+    grid-row: 1 /span 4;
+    grid-column: 1 / span 4;
+    border-radius: 12px;
+}
+.heading{
+    font-size: 1.5rem;
+    color: green;
+    padding-bottom: 1em;
+}
+.contain-list{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+     /* align-items: center; */
+    background-color:white;
+}
+	
+/* .main-wrapper{
+    max-width: 1200px;
+    margin: auto;
+} */
+/* @media (max-width:450px){
+    .media-wrapper{
+        width: ;
+    }
+} */
+@media all and (min-width:500px){
+        .img-list{
+            width:50%;
+            height:25%;
+        }
+        .heading{
+    font-size: 1rem;
+}
+    }

@@ -4,8 +4,8 @@ import Categories from './components/Categories/Categories';
 import { Link, Route } from 'react-router-dom';
 import ListOfCategory from './components/ListOfCategory/ListOfCategory';
 import Home from './components/Home/Home';
-import { useEffect, useState } from 'react';
-import CategoryResults from './components/CategoryResults/CategoryResults';
+import { useState } from 'react';
+import Details from './components/Details/Details';
 
 function App() {
 	const [searchStr, setSearchStr] = useState('');
@@ -34,14 +34,26 @@ function App() {
 	};
 
 	return (
-		<div className='App'>
+		<div>
 			<header>
 				<nav>
-					<Link to='/'>
-						<h1 className='heading'>MEAL IDEA</h1>
-					</Link>
-					<Link to='/Categories'>Categories</Link>
-					{/* <Link to='/About'>About</Link> */}
+					<ul className='menu'>
+						<li>
+							<Link to='/' className='app-link'>
+								<h1
+									onClick={() => {
+										setCategoryResults('');
+									}}>
+									MEAL IDEA
+								</h1>
+							</Link>
+						</li>
+						<li>
+							<Link to='/Categories' className='app-link'>
+								<h1>Categories</h1>
+							</Link>
+						</li>
+					</ul>
 				</nav>
 			</header>
 
@@ -61,7 +73,7 @@ function App() {
 			<Route path='/about' component={About} />
 			<Route path='/categories' component={Categories} />
 			<Route path='/list/:strCategory' component={ListOfCategory} />
-			<CategoryResults categoryResults={categoryResults} />
+			<Route path='/details/:idMeal' component={Details} />
 		</div>
 	);
 }

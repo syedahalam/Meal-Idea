@@ -1,4 +1,4 @@
-.home{
+.home-home{
     background-image: url('../Home/Images/home.png');
 	background-repeat: no-repeat;
 	background-size: cover; 
@@ -8,13 +8,14 @@
 .button{
   
     padding: 1em 1.5em;
-    margin: 3em;
-    margin-left:10em;
+    margin: 1em;
+    margin-left:5.5em;
     background-color: rgba(255, 0, 0, 0.585);
     color: white;
-    font-size: 1.3em;
+    font-size: 1.1em;
     border-radius: 8px;
     border-style: none;
+    width: 12em;
 }
 .form{
     display: flex;
@@ -35,23 +36,49 @@
       text-align: center;
       width: 20em;
       margin-left: 15%;
-      margin-top: 3%;
+      margin-top: 35px;
       font-size: 1.3em;
 }
-.img{
-    width: 10em;
-    height: 10em;
+.img-home{
+    width: 20em;
+    height: 20em;
     grid-row: 1 /span 4;
-    grid-column: 1 /span 4;
+    grid-column: 1 / span 4;
     border-radius: 12px;
+    
+   
 }
-.contain{
+.contain-home{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* align-items: center; */
-    background-color: seashell;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+     /* align-items: center; */
+    background-color:white;
+   
+}
+.main-home{
+    display: flex;
+    padding:30 px;
+    margin: 10px;
+    text-align: center;
+    flex-direction:row;
 }
 ul{
     list-style-type: none;
+}
+h2{
+    font-size: 1.5rem;
+}
+
+@media all and (min-width:468px){
+    .input{
+        width:15em;
+    }
+    .img-home{
+        width: 50%;
+        height: 25%;
+    }
+    h2{
+        font-size: 1rem;
+    }
 }
