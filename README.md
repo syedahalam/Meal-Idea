@@ -1,7 +1,7 @@
 # MEAL IDEA
 
-- If you are a food lover and want to try new meals everytime, you are in good place then!
-- On the landing page, you can search throuh a search bar, any category of meal, of your choice.
+- If you are a food lover and want to try new meals every time, you are in good place then!
+- On the landing page, you can search through a search bar, any category of meal, of your choice.
 - Or, from the navigation bar, on top you can select any category of your choice of meal.
 
 ## Landing Page
