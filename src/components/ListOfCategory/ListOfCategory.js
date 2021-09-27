@@ -21,7 +21,7 @@ const ListOfCategory = () => {
 					})
 					.catch(console.error);
         
-    }, [strCategory])
+    }, [])
 
 if(!list.length) return null;
 
