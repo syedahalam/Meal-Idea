@@ -37,9 +37,7 @@ function App() {
 			<Navbar />
 
 			<Route
-				exact
-				path='/'
-				//used render if we r passing props
+				exact path='/'
 				render={() => (
 					<Home
 						handleChange={handleChange}
