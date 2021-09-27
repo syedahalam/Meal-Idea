@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Home = ({ handleSubmit, handleChange, searchStr }) => {
 	console.log(searchStr);
 
-	// const url = "https://www.youtube.com/watch?v=_gFB1fkNhXs"
+	
 	return (
 		<div className='home-home'>
 			{searchStr ? (

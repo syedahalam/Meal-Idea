@@ -25,12 +25,8 @@ const Details = () => {
 				console.log(detail.strYoutube);
 				return (
 					<div>
-						<div>
-							<h1>{detail.strMeal}</h1>
-							<span>
-								<h3>({detail.strArea} Recipe)</h3>
-							</span>
-						</div>
+						<h1>{detail.strMeal}</h1>
+						<h3>({detail.strArea} Recipe)</h3>
 						<img
 							className='img-pic'
 							src={detail.strMealThumb}
