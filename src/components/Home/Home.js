@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 
 const Home = ({ handleSubmit, handleChange, searchStr }) => {
 	console.log(searchStr);
-
-	
 	return (
 		<div className='home-home'>
 			{searchStr ? (
