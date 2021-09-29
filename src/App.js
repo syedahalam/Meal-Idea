@@ -4,6 +4,7 @@ import ListOfCategory from './components/ListOfCategory/ListOfCategory';
 import Home from './components/Home/Home';
 import Details from './components/Details/Details';
 import Navbar from './components/Navbar/Navbar';
+import Form from './components/Form/Form';
 import { Link, Route } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -18,6 +19,7 @@ function App() {
 			.then((res) => res.json())
 			.then((res) => {
 				setCategoryResults(res.meals);
+				// setCategoryResults(res.meals);
 			})
 			.catch(console.error);
 	};
@@ -34,10 +36,15 @@ function App() {
 
 	return (
 		<div>
-			<Navbar />
+			<Navbar
+				setSearchStr={setSearchStr}
+				setCategoryResults={setCategoryResults}
+			/>
+			
 
 			<Route
-				exact path='/'
+				exact
+				path='/'
 				render={() => (
 					<Home
 						handleChange={handleChange}
@@ -47,7 +54,6 @@ function App() {
 				)}
 			/>
 
-		
 			<Route path='/categories' component={Categories} />
 			<Route path='/list/:strCategory' component={ListOfCategory} />
 			<Route path='/details/:idMeal' component={Details} />

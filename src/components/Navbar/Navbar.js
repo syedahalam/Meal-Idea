@@ -2,16 +2,22 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({ setSearchStr, setCategoryResults }) => {
      const [isMobile, setIsMobile] = useState(false);
-     const [categoryResults, setCategoryResults] = useState('');
+    
+
+    const handleClick=()=>{
+        setSearchStr('');
+        setCategoryResults('');
+    }
+
     return (
 			<nav className='navbar'>
-				<Link to='/'>
+				<Link to='/'
+                    onClick = {handleClick}
+                >
 					<h3 className='logo'
-                    onClick={()=>{
-                        setCategoryResults('')
-                    }}
+                    
                     >Meal Idea</h3>
 				</Link>
 				<ul
